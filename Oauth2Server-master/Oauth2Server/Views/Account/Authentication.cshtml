@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Authentication";
+}
+
+<h2>Authentication</h2>
+<form action="/Oauth2/AuthenticationProcess" method="post">
+    <input type="hidden" name="clientId" value="@ViewData["clientId"]" />
+    <input type="hidden" name="clientId" value="@ViewData["scope"]" />
+    <div>Email <input type="text" name="email" value="" /></div>
+    <div>Password <input type="password" name="password" value="" /></div>
+</form>
